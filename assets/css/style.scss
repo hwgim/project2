@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "_mixin", "_var";
+/* cnt1 - 메인 슬라이더 */
+#cnt1 {
+    margin-top: 75px; 
+    .swiper-container{padding-bottom: 50px;}
+  .swiper-slide {    
+    .txt{
+        position: absolute; background: rgba(255,255,255,0.5);
+        top: 121px; left: 0;width: calc(100% - 70px); height: 120px; margin: 0 35px; padding: 10px 0;
+        border: 1px solid black;
+        h3{
+            bottom: 0;
+            left: 50%;
+            font-size: 28px;
+            line-height: 1.56;
+            color: #000000;
+            font-weight: bold;
+            letter-spacing : 3px;
+            text-align: center;
+        }
+        p{
+            bottom: 0;
+            left: 50%;
+            font-size: 13px;
+            font-family: SCDream;
+            text-align: center;}
+        }
+        h2{
+        font-size: 40px;
+        font-weight: bold;
+        background: linear-gradient(to right, #db36a4, #f7ff00);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        }
+        img{width: 100%;}
+    }  
+    .swiper-pagination-fraction {
+    bottom: 20px; }
+    .swiper-button-prev, .swiper-button-next {
+        width: 20px; height: 20px;}
+    .swiper-button-prev:after, .swiper-button-next:after {display: none; }
+}
+
+.main article{
+    &:not(#cnt1){text-align: center;}
+    &:not(#cnt1) h3{padding-top: 90px;font-size: 22px;left: 50%;margin-bottom: 17px;}
+    h4{font-size: 16px;margin-bottom: 21px;}
+    .more{position: absolute;right: 10px;top: 0;line-height: 32px;}
+    .more_icon{width: 16px;right: 0px;}
+}
+
+/* cnt2 - 녹차원 제품 카테고리 */
+
+#cnt2 .con_box{background:#ffffff;padding-top: 30px;}
+#cnt2 .con_box ul{box-sizing: border-box; width: 100%;}
+#cnt2 .con_box ul li{
+    @include borderBox;
+    width: 50%; height: 240px; float: left; border: 1px solid #EAE8D6;text-align: center;}
+#cnt2 .con_box ul li:hover, #cnt2 .con_box ul li:focus{background: #EAE8D6;}
+#cnt2 .con_box ul li img{margin:20px 16px; display: block;width:82.22222%;margin-bottom:21px;}
+#cnt .con_box ul li span{font-size: 16px; font-weight: bold; font-family: paybooc;}
+
+/* cnt3 - 신제품 */
+
+#cnt3{}
+
+/* cnt4 - 베스트제품 */
+
+  #cnt4 .swiper-container {
+    margin: 0 -15px;
+    /* transform-origin : transform을 시킬때 기준점, 기본값 center */ }
+    #cnt4 .swiper-container .swiper-slide {
+      color: #000; }
+    #cnt4 .swiper-container strong {
+      display: block;
+      font-size: 18px;
+      line-height: 0.67;
+      padding: 20px 0 15px;
+      letter-spacing: 1.8px; }
+    #cnt4 .swiper-container p {
+      line-height: 1.62; }
+    #cnt4 .swiper-container .swiper-scrollbar {
+      position: static;
+      margin: 40px auto;
+      height: 1px;
+      width: 90%; }
+      #cnt4 .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+        height: 3px;
+        background: #000;
+        top: -2px; }
+
+/* cnt5 - 이벤트배너 */
+#cnt5{background: yellow;}
+
+/* cnt6 - 인스타그램 */
+#cnt6{background: gray;}
