@@ -20,7 +20,7 @@ $(document).ready(function () {
     loop:true,
     pagination: {
       el: '.swiper-pagination',
-      type: 'fraction',
+      type: 'bullets',
       //clickable: true, //bullet 타입일 경우 버튼 클릭시 이동 가능함
     },
     navigation: {
@@ -43,5 +43,18 @@ $(document).ready(function () {
       lastSlideMessage: '마지막 슬라이드',
     }
   })
+  //본문5 슬라이더
+  var mySwiper1 = new Swiper('#cnt5 .swiper-container', {
+    loop:true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+      //clickable: true, //bullet 타입일 경우 버튼 클릭시 이동 가능함
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });
 

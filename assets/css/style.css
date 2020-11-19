@@ -1,49 +1,72 @@
 @charset "UTF-8";
 /* cnt1 - 메인 슬라이더 */
-#cnt1 {
-  margin-top: 75px; }
-  #cnt1 .swiper-container {
-    padding-bottom: 50px; }
-  #cnt1 .swiper-slide .txt {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.5);
-    top: 121px;
-    left: 0;
-    width: calc(100% - 70px);
-    height: 120px;
-    margin: 0 35px;
-    padding: 10px 0;
-    border: 1px solid black; }
-    #cnt1 .swiper-slide .txt h3 {
-      bottom: 0;
-      left: 50%;
-      font-size: 28px;
-      line-height: 1.56;
-      color: #000000;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-align: center; }
-    #cnt1 .swiper-slide .txt p {
-      bottom: 0;
-      left: 50%;
-      font-size: 13px;
-      font-family: SCDream;
-      text-align: center; }
-  #cnt1 .swiper-slide h2 {
+#cnt1 .swiper-container {
+  padding-bottom: 50px; }
+#cnt1 .swiper-slide .txt {
+  position: absolute;
+  /* background: rgba(255,255,255,0.5); */
+  top: 121px;
+  left: 0;
+  width: calc(100% - 70px);
+  height: 120px;
+  margin: 0 35px;
+  padding: 10px 0;
+  border: 1px solid black; }
+  #cnt1 .swiper-slide .txt h3 {
+    bottom: 0;
+    left: 50%;
+    font-size: 28px;
+    line-height: 1.56;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center; }
+  #cnt1 .swiper-slide .txt p {
+    bottom: 0;
+    left: 50%;
+    font-size: 13px;
+    font-family: SCDream;
+    text-align: center; }
+  #cnt1 .swiper-slide .txt img {
+    width: 100%; }
+#cnt1 .swiper-slide .idol-water {
+  position: absolute;
+  text-align: center; }
+  #cnt1 .swiper-slide .idol-water h2 {
+    bottom: 0;
+    left: 50%;
+    padding-top: 200px;
+    padding-left: 50px;
+    /* 중간에 오지 않아서 강제로 위치 줌 */
     font-size: 40px;
     font-weight: bold;
     background: linear-gradient(to right, #db36a4, #f7ff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  #cnt1 .swiper-slide img {
+  #cnt1 .swiper-slide .idol-water p {
+    bottom: 0;
+    left: 50%;
+    /* 중간에 오지 않음 */
+    padding-top: 30px;
+    font-size: 13px;
+    font-family: SCDream; }
+  #cnt1 .swiper-slide .idol-water img {
     width: 100%; }
-  #cnt1 .swiper-pagination-fraction {
-    bottom: 20px; }
-  #cnt1 .swiper-button-prev, #cnt1 .swiper-button-next {
-    width: 20px;
-    height: 20px; }
-  #cnt1 .swiper-button-prev:after, #cnt1 .swiper-button-next:after {
-    display: none; }
+#cnt1 .controlbox {
+  padding-top: 20px; }
+#cnt1 .swiper-pagination {
+  width: 100%; }
+#cnt1 .swiper-pagination-bullet {
+  background: #8dc63f;
+  margin-left: 10px;
+  width: 50px;
+  height: 9px;
+  border-radius: 6px; }
+#cnt1 .swiper-button-prev, #cnt1 .swiper-button-next {
+  width: 20px;
+  height: 20px; }
+#cnt1 .swiper-button-prev:after, #cnt1 .swiper-button-next:after {
+  display: none; }
 
 .main article:not(#cnt1) {
   text-align: center; }
@@ -59,9 +82,11 @@
   position: absolute;
   right: 10px;
   top: 0;
-  line-height: 32px; }
+  line-height: 15px;
+  font-family: NTSans;
+  font-size: 14px; }
 .main article .more_icon {
-  width: 16px;
+  width: 10px;
   right: 0px; }
 
 /* cnt2 - 녹차원 제품 카테고리 */
@@ -91,47 +116,120 @@
   width: 82.22222%;
   margin-bottom: 21px; }
 
-#cnt .con_box ul li span {
+#cnt2 .con_box ul li span {
   font-size: 16px;
   font-weight: bold;
   font-family: paybooc; }
 
 /* cnt3 - 신제품 */
+#cnt3 span {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: paybooc;
+  line-height: 42px; }
+
 /* cnt4 - 베스트제품 */
 #cnt4 .swiper-container {
-  margin: 0 -15px;
-  /* transform-origin : transform을 시킬때 기준점, 기본값 center */ }
-
+  margin: 0 -15px; }
 #cnt4 .swiper-container .swiper-slide {
   color: #000; }
-
 #cnt4 .swiper-container strong {
   display: block;
   font-size: 18px;
   line-height: 0.67;
   padding: 20px 0 15px;
   letter-spacing: 1.8px; }
-
 #cnt4 .swiper-container p {
   line-height: 1.62; }
-
 #cnt4 .swiper-container .swiper-scrollbar {
   position: static;
   margin: 40px auto;
   height: 1px;
   width: 90%; }
-
 #cnt4 .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
   height: 3px;
   background: #000;
   top: -2px; }
+#cnt4 .tt .dprice {
+  text-decoration: line-through; }
+#cnt4 .tt .price {
+  tab-size: 20px;
+  line-height: 24px;
+  font-weight: bold; }
+#cnt4 .pop {
+  display: inline-block; }
+  #cnt4 .pop .sale, #cnt4 .pop .best, #cnt4 .pop .md, #cnt4 .pop .hot {
+    width: 64px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 6px;
+    color: #ffffff;
+    font-family: NTSans;
+    line-height: 20px;
+    font-weight: bold; }
+  #cnt4 .pop .sale {
+    background: #3498db; }
+  #cnt4 .pop .best {
+    background: #e0e0e0;
+    color: #555755; }
+  #cnt4 .pop .md {
+    background: #8dc63f; }
+  #cnt4 .pop .hot {
+    background: #e74c3c; }
 
 /* cnt5 - 이벤트배너 */
-#cnt5 {
-  background: yellow; }
+#cnt5 .controlbox .swiper-pagination {
+  bottom: 15px;
+  left: 40%;
+  line-height: 30px;
+  color: #ffffff;
+  width: 64px;
+  height: 25px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6); }
 
 /* cnt6 - 인스타그램 */
-#cnt6 {
-  background: gray; }
+#cnt6 a {
+  display: inline-block;
+  cursor: pointer; }
+#cnt6 p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 34px;
+  background: #9ea665;
+  width: 188px;
+  height: 32px;
+  border-radius: 6px; }
+
+#cnt6 .con_box {
+  background: #ffffff;
+  padding-top: 30px; }
+
+#cnt6 .con_box ul {
+  box-sizing: border-box;
+  width: 100%; }
+
+#cnt6 .con_box ul li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  height: 200px;
+  float: left;
+  border: 1px solid #EAE8D6;
+  text-align: center; }
+
+#cnt6 .con_box ul li:hover, #cnt6 .con_box ul li:focus {
+  background: #EAE8D6; }
+
+#cnt6 .con_box ul li img {
+  margin: 20px 16px;
+  display: block;
+  width: 82.22222%;
+  margin-bottom: 21px; }
+
+#cnt6 .con_box ul li img:hover,
+#cnt6 .con_box ul li img:focus {
+  transform: scale(1.3); }
 
 /*# sourceMappingURL=style.css.map */
