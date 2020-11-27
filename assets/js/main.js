@@ -7,14 +7,7 @@ $(document).ready(function () {
   });
   $(window).trigger('resize');
 
-  $(window).on('scroll', function () {
-    var scrollT = $(this).scrollTop();
 
-    if (scrollT > $('.main_banner').offset().top - 500) {
-      $('.main_banner').addClass('on');
-    }
-  });
-  
   //본문1 슬라이더
   var mySwiper1 = new Swiper('#cnt1 .swiper-container', {
     loop:true,
@@ -28,6 +21,27 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+  //본문3 신제품 -> color 4가지
+
+    var cntHei = $('.color_wrap').height();
+    var stickyTop = $('.sticky_content').offset().top;
+    console.log(cntHei, stickyTop);
+  
+    $(window).on('scroll', function () {
+      var scrollY = $(this).scrollTop();
+      console.log(scrollY); //스크롤바의 수직 이동 거리
+      /*  스크롤바가 이동하는 거리가 아래 크기보다 더 커질경우 불투명도 제어
+      5개의 색상 div에서 반복 : 시작위치 + 윈도우 높이 x 인덱스번호
+        $('반복할 대상 선택자').each(function (인덱스번호, 엘리먼트) {
+          코드;
+        }); 
+      */
+      $('.color_wrap div').each(function (idx) {
+        if (scrollY > stickyTop + cntHei * idx) {
+          $(this).addClass('opa1').siblings().removeClass('opa1');
+        }
+      });
+    });
 
   //본문4 슬라이더
   var mySwiper2 = new Swiper('#cnt4 .swiper-container', {
@@ -57,4 +71,3 @@ $(document).ready(function () {
     },
   });
 });
-

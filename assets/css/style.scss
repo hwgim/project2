@@ -69,23 +69,38 @@
 
 /* cnt2 - 녹차원 제품 카테고리 */
 
-#cnt2 .con_box{background:#ffffff;padding-top: 30px;}
-#cnt2 .con_box ul{box-sizing: border-box; width: 100%;}
-#cnt2 .con_box ul li{
+#cnt2{
+  .con_box{background:#ffffff;padding-top: 30px;}
+  .con_box ul{box-sizing: border-box; width: 100%;}
+  .con_box ul li{
     @include borderBox;
     width: 50%; height: 240px; float: left; border: 1px solid #EAE8D6;text-align: center;}
-#cnt2 .con_box ul li:hover, #cnt2 .con_box ul li:focus{background: #EAE8D6;}
-#cnt2 .con_box ul li img{margin:20px 16px; display: block;width:82.22222%;margin-bottom:21px;}
-#cnt2 .con_box ul li span{font-size: 16px; font-weight: bold; font-family: paybooc;}
+  .con_box ul li:hover, #cnt2 .con_box ul li:focus{background: #EAE8D6;}
+  .con_box ul li img{margin:20px 16px; display: block;width:82.22222%;margin-bottom:21px;}
+  .con_box ul li span{font-size: 16px; font-weight: bold; font-family: paybooc;}
+}
+
 
 /* cnt3 - 신제품 */
-
 #cnt3{
-  span{font-size: 40px; font-weight: bold; font-family: paybooc;line-height: 42px;}
+  .colors{height: 1844px;}
+  .sticky_content{position: -webkit-sticky;position: sticky;top: 0;border: 10px solid red;}
+  .color_wrap{position: relative;width: 100%;height: 461px;}
+  .color_wrap div{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: no-repeat center;opacity: 0;transition: opacity 1s;background-size: 360px 461px;}
+  .color_wrap .new1{background-image: url("../images/main/new1.jpg");}
+  .color_wrap .new2{background-image: url("../images/main/new2.jpg");}
+  .color_wrap .new3{background-image: url("../images/main/new3.jpg");}
+  .color_wrap .new4{background-image: url("../images/main/new4.jpg");}
+  .opa1{opacity: 1 !important;}
+  .color_wrap span{font-size: 36px; font-weight: bold; font-family: paybooc;line-height: 36px;}
 }
+/* 브라우저 분기 처리 : @supports 다음과 같은 조건을 만족하는 브라우저를 만났을 경우 스타일을 적용한다 */
+
+
 
 /* cnt4 - 베스트제품 */
 #cnt4{
+  display: none;
   .swiper-container {
     margin: 0 -15px;}
   .swiper-container .swiper-slide {
@@ -127,6 +142,7 @@
 
 /* cnt5 - 이벤트배너 */
 #cnt5{
+  display: none;
   .controlbox {
   .swiper-pagination{ 
   bottom: 15px; left:40%;line-height: 30px;
@@ -137,18 +153,20 @@
 
 /* cnt6 - 인스타그램 */
 #cnt6{
+  display: none;
   a{display: inline-block;cursor: pointer;}
   p{font-weight: bold; font-size: 16px;
-    color: #ffffff;line-height: 34px;background:#9ea665; width:188px; height: 32px; border-radius: 6px;}
-}
-#cnt6 .con_box{background:#ffffff;padding-top: 30px;}
-#cnt6 .con_box ul{box-sizing: border-box; width: 100%;}
-#cnt6 .con_box ul li{
+    color: #ffffff;line-height: 34px;background:#9ea665; width:188px; height: 32px; border-radius: 6px; margin-bottom: 30px;}
+    .con_box{background:#ffffff;padding-top: 30px;}
+    .con_box ul{box-sizing: border-box; width: 100%;}
+    .con_box ul li{
     @include borderBox;
-    width: 50%; height: 200px; float: left; border: 1px solid #EAE8D6;text-align: center;}
-#cnt6 .con_box ul li:hover, #cnt6 .con_box ul li:focus{background: #EAE8D6;}
-#cnt6 .con_box ul li img{margin:20px 16px; display: block;width:82.22222%;margin-bottom:21px;}
-#cnt6 .con_box ul li img:hover,
-#cnt6 .con_box ul li img:focus{
-  transform: scale(1.3);
+    width: 50%; height: 180px; float: left; border: 1px solid #EAE8D6;text-align: center;display: block; overflow: hidden;}
+    .con_box ul li img{
+  @include transform(scale(1));
+  @include transition(all 0.5s);
+  .con_box ul li img:hover,.con_box ul li img:focus{
+  cursor: pointer;
+  @include transform(scale(1.1));}
+}
 }
