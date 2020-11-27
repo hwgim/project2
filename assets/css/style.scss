@@ -100,7 +100,6 @@
 
 /* cnt4 - 베스트제품 */
 #cnt4{
-  display: none;
   .swiper-container {
     margin: 0 -15px;}
   .swiper-container .swiper-slide {
@@ -122,13 +121,15 @@
         height: 3px;
         background: #000;
         top: -2px; }
-  .tt{    
-  .dprice{text-decoration: line-through ;}
-  .price{tab-size: 20px; line-height: 24px; font-weight: bold;}
+  .tt{ 
+    .pri{
+      >p{display: inline-block;}
+      .dprice{text-decoration: line-through ;}
+      .price{tab-size: 20px; line-height: 24px; font-weight: bold;}}
   }  
   .pop{
-    display: inline-block; 
-    .sale,.best,.md,.hot{width: 64px; height: 25px;border-radius: 5px;margin-left:6px; color: #ffffff;
+    .sale,.best,.md,.hot{
+      display: inline-block;width: 64px; height: 25px;border-radius: 5px;margin-left:6px; color: #ffffff;
     font-family: NTSans; line-height: 20px;
     font-weight: bold;
     } 
@@ -153,20 +154,21 @@
 
 /* cnt6 - 인스타그램 */
 #cnt6{
-  display: none;
   a{display: inline-block;cursor: pointer;}
   p{font-weight: bold; font-size: 16px;
     color: #ffffff;line-height: 34px;background:#9ea665; width:188px; height: 32px; border-radius: 6px; margin-bottom: 30px;}
     .con_box{background:#ffffff;padding-top: 30px;}
     .con_box ul{box-sizing: border-box; width: 100%;}
     .con_box ul li{
-    @include borderBox;
-    width: 50%; height: 180px; float: left; border: 1px solid #EAE8D6;text-align: center;display: block; overflow: hidden;}
+      @include borderBox;
+      width: 50%; height: 180px; float: left; border: 1px solid #EAE8D6;text-align: center;display: block; overflow: hidden;
+    }
     .con_box ul li img{
-  @include transform(scale(1));
-  @include transition(all 0.5s);
-  .con_box ul li img:hover,.con_box ul li img:focus{
-  cursor: pointer;
-  @include transform(scale(1.1));}
-}
+      @include transform(scale(1));
+      @include transition(all 0.5s);
+    }
+  .con_box ul li img:hover{
+    @include transform(scale(1.1));
+    cursor: pointer;
+  }
 }

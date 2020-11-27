@@ -156,55 +156,54 @@
 
 /* 브라우저 분기 처리 : @supports 다음과 같은 조건을 만족하는 브라우저를 만났을 경우 스타일을 적용한다 */
 /* cnt4 - 베스트제품 */
-#cnt4 {
-  display: none; }
-  #cnt4 .swiper-container {
-    margin: 0 -15px; }
-  #cnt4 .swiper-container .swiper-slide {
-    color: #000; }
-  #cnt4 .swiper-container strong {
-    display: block;
-    font-size: 18px;
-    line-height: 0.67;
-    padding: 20px 0 15px;
-    letter-spacing: 1.8px; }
-  #cnt4 .swiper-container p {
-    line-height: 1.62; }
-  #cnt4 .swiper-container .swiper-scrollbar {
-    position: static;
-    margin: 40px auto;
-    height: 1px;
-    width: 90%; }
-  #cnt4 .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
-    height: 3px;
-    background: #000;
-    top: -2px; }
-  #cnt4 .tt .dprice {
-    text-decoration: line-through; }
-  #cnt4 .tt .price {
-    tab-size: 20px;
-    line-height: 24px;
-    font-weight: bold; }
-  #cnt4 .pop {
-    display: inline-block; }
-    #cnt4 .pop .sale, #cnt4 .pop .best, #cnt4 .pop .md, #cnt4 .pop .hot {
-      width: 64px;
-      height: 25px;
-      border-radius: 5px;
-      margin-left: 6px;
-      color: #ffffff;
-      font-family: NTSans;
-      line-height: 20px;
-      font-weight: bold; }
-    #cnt4 .pop .sale {
-      background: #3498db; }
-    #cnt4 .pop .best {
-      background: #e0e0e0;
-      color: #555755; }
-    #cnt4 .pop .md {
-      background: #8dc63f; }
-    #cnt4 .pop .hot {
-      background: #e74c3c; }
+#cnt4 .swiper-container {
+  margin: 0 -15px; }
+#cnt4 .swiper-container .swiper-slide {
+  color: #000; }
+#cnt4 .swiper-container strong {
+  display: block;
+  font-size: 18px;
+  line-height: 0.67;
+  padding: 20px 0 15px;
+  letter-spacing: 1.8px; }
+#cnt4 .swiper-container p {
+  line-height: 1.62; }
+#cnt4 .swiper-container .swiper-scrollbar {
+  position: static;
+  margin: 40px auto;
+  height: 1px;
+  width: 90%; }
+#cnt4 .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+  height: 3px;
+  background: #000;
+  top: -2px; }
+#cnt4 .tt .pri > p {
+  display: inline-block; }
+#cnt4 .tt .pri .dprice {
+  text-decoration: line-through; }
+#cnt4 .tt .pri .price {
+  tab-size: 20px;
+  line-height: 24px;
+  font-weight: bold; }
+#cnt4 .pop .sale, #cnt4 .pop .best, #cnt4 .pop .md, #cnt4 .pop .hot {
+  display: inline-block;
+  width: 64px;
+  height: 25px;
+  border-radius: 5px;
+  margin-left: 6px;
+  color: #ffffff;
+  font-family: NTSans;
+  line-height: 20px;
+  font-weight: bold; }
+#cnt4 .pop .sale {
+  background: #3498db; }
+#cnt4 .pop .best {
+  background: #e0e0e0;
+  color: #555755; }
+#cnt4 .pop .md {
+  background: #8dc63f; }
+#cnt4 .pop .hot {
+  background: #e74c3c; }
 
 /* cnt5 - 이벤트배너 */
 #cnt5 {
@@ -220,47 +219,45 @@
     background: rgba(0, 0, 0, 0.6); }
 
 /* cnt6 - 인스타그램 */
-#cnt6 {
-  display: none; }
-  #cnt6 a {
-    display: inline-block;
-    cursor: pointer; }
-  #cnt6 p {
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 34px;
-    background: #9ea665;
-    width: 188px;
-    height: 32px;
-    border-radius: 6px;
-    margin-bottom: 30px; }
-  #cnt6 .con_box {
-    background: #ffffff;
-    padding-top: 30px; }
-  #cnt6 .con_box ul {
-    box-sizing: border-box;
-    width: 100%; }
-  #cnt6 .con_box ul li {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    height: 180px;
-    float: left;
-    border: 1px solid #EAE8D6;
-    text-align: center;
-    display: block;
-    overflow: hidden; }
-  #cnt6 .con_box ul li img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
-    #cnt6 .con_box ul li img .con_box ul li img:hover, #cnt6 .con_box ul li img .con_box ul li img:focus {
-      cursor: pointer;
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1); }
+#cnt6 a {
+  display: inline-block;
+  cursor: pointer; }
+#cnt6 p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 34px;
+  background: #9ea665;
+  width: 188px;
+  height: 32px;
+  border-radius: 6px;
+  margin-bottom: 30px; }
+#cnt6 .con_box {
+  background: #ffffff;
+  padding-top: 30px; }
+#cnt6 .con_box ul {
+  box-sizing: border-box;
+  width: 100%; }
+#cnt6 .con_box ul li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  height: 180px;
+  float: left;
+  border: 1px solid #EAE8D6;
+  text-align: center;
+  display: block;
+  overflow: hidden; }
+#cnt6 .con_box ul li img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+#cnt6 .con_box ul li img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
